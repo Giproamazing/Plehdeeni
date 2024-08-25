@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Reporter</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #clickable {
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>NEWS REPORTER, 12, 1970</h1>
+    <p>we had a mIssIng person called WiLLiam.<br>NOw This case is very pls HELP us find any new case <span id="clickable">subject</span>. Contact 875430*86.<br>
+    If you find him, he was last seen on Orland Street, 6, VT.<br>
+    He was last seen going to his party with his friends and theN went missing. Please cOntact them if you find him or any HINTS.</p>
+
+    <script>
+        document.getElementById("clickable").addEventListener("click", function() {
+            var headline = document.querySelector("h1");
+            headline.innerHTML = headline.innerHTML.replace("1970", "70");
+        });
+    </script>
+</body>
+  </html>
